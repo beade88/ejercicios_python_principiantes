@@ -21,6 +21,7 @@ Extras:
 
 # For some rare reason on my PC input for name
 # does not work, test it on yours and tell me
+# It's works good!!!
 name = input('Enter your name: ')
 age = int(input('Enter your age: '))
 
@@ -34,3 +35,4 @@ year = 2019 - age + 100
 
 # print(nombre + " usted cumplira 100 annos en el anno " + x)
 print('{} you will be 100 years old on year {}'.format(name, year))
+# I understand all of your comments.
