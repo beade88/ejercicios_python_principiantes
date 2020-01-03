@@ -9,24 +9,9 @@ that has only the even elements of this list in it.
 # I'll try later the one line of code solution...Well I hope so... :(  :)
 
 # Please use for loop to fill the list
-a = int(input('Type a number: '))
-b = int(input('Type a number: '))
-c = int(input('Type a number: '))
-d = int(input('Type a number: '))
-e = int(input('Type a number: '))
-f = int(input('Type a number: '))
-g = int(input('Type a number: '))
-h = int(input('Type a number: '))
-
-#my_list = [a, b, c, d,
-#           e, f, g, h
-#]
-
-# PEP8 says this
-my_list = [
-	a, b, c, d,
-	e, f, g, h,
-]
+my_list = []
+for i in range(0, 8):
+	my_list.append(int(input('Type a number: ')))
 even_list = []
 for x in range(0, len(my_list)):
 	mod = my_list[x] % 2
