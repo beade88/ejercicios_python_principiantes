@@ -16,38 +16,29 @@ Extras:
     Write this in one line of Python (dont worry if you cant figure this
     out at this point - we will get to it soon)
 '''
-#Este esta implementado con python3 desde el inicio :D
+# Este esta implementado con python3 desde el inicio :D
 
 # ******************************************************************
 # Please remake this excercise using a for loop to fill the lists
 # then push again
 # ******************************************************************
 
-print("Lista 1")
-a = int(input("Ingrese un numero: "))
-b = int(input("Ingrese un numero: "))
-c = int(input("Ingrese un numero: "))
-d = int(input("Ingrese un numero: "))
-e = int(input("Ingrese un numero: "))
-f = int(input("Ingrese un numero: "))
-lista1 = [a, b, c, d, e, f]
-print("La lista 1 es: ")
-print(lista1)
-print("Lista 2")
-g = int(input("Ingrese un numero: "))
-h = int(input("Ingrese un numero: "))
-i = int(input("Ingrese un numero: "))
-j = int(input("Ingrese un numero: "))
-k = int(input("Ingrese un numero: "))
-lista2 = [g, h, i, j, k]
-print("La lista 2 es: ")
-print(lista2)
-lista3 = []
-print("Los numeros que coinciden en ambas listas son: ")
-for x in lista2 : # PEP8 here, lista2:
-	if x in lista1 : # PEP8 here, lista1:
-		lista3.append(x)
-print(lista3)
+print('List 1')
+list_1 = []
+for elements_1 in range(0, 6):
+    elements_1 = int(input('Type a number: '))
+    list_1.append(elements_1)
+print('List 2')
+list_2 = []
+for elements_2 in range(0, 5):
+    elements_2 = int(input('Type a number: '))
+    list_2.append(elements_2)
+list_3 = []
+print("The numbers that are common between the lists are: ")
+for x in list_2:  # PEP8 here, lista2:
+    if x in list_1:  # PEP8 here, lista1:
+        list_3.append(x)
+print(list_3)
 
 # Remember, in PEP8 andy sign (, or :) goes without space before.
 # Any sign like (*, +, -) goes with spaces before and after
