@@ -19,8 +19,8 @@ Extras:
 # I will not translate any more :D. I hope is clear for you
 # that everytthing must be in English :D
 
-print "Vamos a elaborar una lista. Para ello le pediremos que ingrese 10 numeros"
-print "De los numeros ingresados le mostraremos los menores que 5"
+print('Lets to create a list. Please type the numbers of your list')
+list_length = int(input(print('First type a number of your list elements: ')))
 '''
 a = input ("Ingrese un numero: ")
 b = input ("Ingrese un numero: ")
@@ -40,9 +40,9 @@ my_list = [a, b, c, d, e, f, g, h, i, j]
 # Only one tip: when somethings is repetitive always use a loop.
 # Look:
 my_list = []
-for _ in range(0, 10):
-	number = int(input('Enter one number: '))
-	my_list.append(number)
+for number in range(0, list_length):
+    number = int(input('Enter one number: '))
+    my_list.append(number)
 print('This is your list: {}'.format(my_list))
 
 # Only one hint here. Look the _ in the for loop.
@@ -67,22 +67,22 @@ print('This is your list: {}'.format(my_list))
 #	my_list.append(number)
 # But yo see? you dont do anything with value, thats why you can ommit it
 # and use _
-
-print "De los numeros ingresados, los menores que 5 son: "
 # Use print() instead of print
-for x in my_list : # PEP8 here, it must be my_list:
-	if x < 5 : # PEP8 here
-  		print(x)
-print "___________________________________________________________________________________________________________________"
-print "___________________________________________________________________________________________________________________"
-print "                                                                                                                   "
+print('Of the typed numbers, the numbers smaller than 5 are: ')
+list_smaller_than_5 = []
+for number2 in my_list:  # PEP8 here, it must be my_list:
+    if number2 < 5:  # PEP8 here
+        list_smaller_than_5.append(number2)
+print(list_smaller_than_5)
 # Use print() instead of print
-print "Ahora le solicitaremos un numero y le mostraremos los elementos de su lista inicial menores que el numero ingresado"
-y = input ("Ingrese un numero: ")
-print "De su lista inicial, los numeros menores que el numero ingresado son: "
-for z in my_list : # PEP8 here
-	if z < y : # PEP8 here
-		print(z)
+print('Now you type a number, and I show you the elements in your list that are smaller than that number typed.')
+number_to_compare = int(input("Type a number: "))
+list_of_smallers = []
+print('The numbers smaller than', number_to_compare,  'are: ')
+for list_position in my_list:  # PEP8 here
+    if list_position < number_to_compare:  # PEP8 here
+        list_of_smallers.append(list_position)
+print(list_of_smallers)
 
 # A deal for you in this excercise!!!!
 # Lets make the length of the list variable.
@@ -90,4 +90,3 @@ for z in my_list : # PEP8 here
 # then the list will be filled with that amount of numbers.
 # Also change the way you show the numbers. Instead
 # of showing one by one in different lines, show them in a list.
-
