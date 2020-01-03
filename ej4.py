@@ -6,15 +6,15 @@ it is a number that divides evenly into another number.
 For example, 13 is a divisor of 26 because 26 / 13 has no remainder.)
 '''
 # use print()
-print "En el siguiente programa le solicitaremos que ingrese un numero y luego le mostraremos los numeros que son divisibles por el numero ingresado"
+print('In the following software you type a number and them we show you a list of  all the divisors of that number')
 # English please
-a = int(input("Ingrese un numero: "))
+a = int(input("Type a number: "))
 my_list = range(1, a+1)  # PEP8 here please range(1, a + 1)
-lista_divisores = [] # English here please
+divisors_list = [] # English here please
 for x in my_list : 
 	if a % x == 0:
-		lista_divisores.append(x)
-print "Su numero es divisible por: "
-print lista_divisores
+		divisors_list.append(x)
+print('Your number divisors are: ')
+print(divisors_list)
 
 # Good!!!! just use English please and be careful with PEP8
