@@ -24,15 +24,15 @@ Extras:
 # no need extra space between int and ()
 number = int(input('Enter one number: '))
 
-#res = n % 2
-#res2 = n % 4
-#if res > 0 :
-#	print ('Usted ha ingresado un numero impar')
-#else :
-#	print ('Usted ha ingresado un numero par')
+# res = n % 2
+# res2 = n % 4
+# if res > 0 :
+# print ('Usted ha ingresado un numero impar')
+# else :
+# print ('Usted ha ingresado un numero par')
 
-#if res2 % 4 == 0 :
-#	print ('Su numero es multiplo de 4')
+# if res2 % 4 == 0 :
+# print ('Su numero es multiplo de 4')
 
 # Is good to declare variables, but in this case
 # you can make the validation directly.
@@ -49,10 +49,6 @@ else:
 if number % 4 == 0:
     print('Your number is divisble by 4.')
 
-#print ("__________________________________________________")
-#print ("Ahora comprobemos si dos numeros son divisibles :D")
-
-print ("__________________________________________________")
 print ("Lets check if two numbers are divisible :D")
 
 # chek = int (input ("Ingrese el primer numero (dividendo): "))
@@ -75,12 +71,3 @@ if first_number % second_number > 0:
 else:
     # print ('El numero ', chek, 'es divisible por ', num)
     print('Number {} is divisible by {}'.format(first_number, second_number))
-
-
-'''
-Importante...en este ejercicio ya transforme el codigo de python2 a python3, 
-las dos diferencias que generaban error al compilar el codigo hecho 
-con python2 con python3 fueron que ahora en python 3 print es una funcion 
-y hay que ponerle () y lo otro fue que en python3 input es una cadena de texto, 
-para poder usar los numeros tuve que convertir con int antes de input")
-'''
