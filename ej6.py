@@ -10,8 +10,18 @@ palindrome or not. (A palindrome is a string that reads the same forwards and ba
 
 print('This program returns you if your word is a palidrome or not')
 word = input('Type a word: ')
-word1 = []
 a = 0
+p = len(word) - 1
+for i in range(len(word)):
+    if word[i] == word[p - len(word)]:
+        a = a + 1
+    p = p - 1
+if a == len(word):
+    print('Your word is palindrome')
+else:
+    print('Your word is not palindrome')
+
+'''
 for p in reversed(word):
 	word1.append(p)
 for x in range(0, len(word)):
@@ -21,7 +31,8 @@ if a == len(word):
 	print('Your word is palindrome')
 else:
 	print('Your word is not palindrome')
-	
+
+'''
 # PEP8 also says that only ONE blank line at the end of a file,
 
 
