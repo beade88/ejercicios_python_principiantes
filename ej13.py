@@ -14,7 +14,6 @@ list_length = int(input('Type a number: '))
 
 def fibonnaci_list(a):
     fibo = [1, 1]
-    b = 1
     for i in range(0, a):
         if i > 1:
             fibo.append(fibo[i-1] + fibo[i-2])
