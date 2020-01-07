@@ -19,7 +19,7 @@ interaction could look like this:
   >>> 1234
   2 cows, 0 bulls
   >>> 1256
-  1 cow, 1 bull
+  1 cow, 1 bull  ...
 """
 
 import random
