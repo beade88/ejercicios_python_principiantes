@@ -8,8 +8,22 @@ palindrome or not. (A palindrome is a string that reads the same forwards and ba
 # you dont have any PEP8 error here :D
 # Also all variables are very good named :D
 
+
+
+# Very good!!!!!
+# Now, new DEAL :D (sorry)
+# What about a very very long word...lets say 1000 characters.
+# With this solution you loop over the hole array, but, think one moment,
+# thats not necessary. Because you go from the begining and from the end,
+# comparing characters, so, when you get to the middle you dont need
+# to keep going because you did that comparison before.
+# If you compare until the middle, yo save 50% time.
+# Also, if only one fails you can stop, because the word is not palind.
+# Do you understand?
+# So, fix this :D
+
 print('This program returns you if your word is a palidrome or not')
-word = input('Type a word: ')
+word = raw_input('Type a word: ')
 a = 0
 p = len(word) - 1
 for i in range(len(word)):
