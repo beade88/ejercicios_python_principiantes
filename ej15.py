@@ -10,6 +10,8 @@ Then I would see the string:
 shown back to me.
 """
 
+# Good, very good.
+# Study the difference between use 'reverse' and 'reversed'
 
 def reverse_sentence(sentence):
     sentence2 = sentence.split(' ')

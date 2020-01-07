@@ -10,6 +10,11 @@ Keep the game going until the user types “exit”
 Keep track of how many guesses the user has taken,
 and when the game ends, print this out.
 """
+
+# Very good!!!!
+# DEAL: think about this solution using functions please
+
+
 import random
 key_number = random.randint(1, 10)
 on_game = 'y'
