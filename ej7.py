@@ -13,11 +13,25 @@ my_list = []
 for i in range(0, 8):
 	my_list.append(int(input('Type a number: ')))
 even_list = []
+
+'''
 for x in range(0, len(my_list)):
 	mod = my_list[x] % 2
 	if mod == 0:
 		even_list.append(my_list[x])
-print('The even elements in your list are: ', even_list)
+'''
+# Nop, dont do it this way!!!!!
+# It seems C code, remember in Python
+# you dont need to do list[x] and then x++.
+# DO IT ALWAYS LIKE THIS!!!
+for x in my_list:  # this way it iterates automatically over the list
+	if x % 2 == 0:  # here x has the value in each position
+		even_list.append(x)  # and you use that value
+print('The even elements in your list are: ', even_list)  # use format() instead
+
+
+
+
 
 # Good, very good. Just use a loop to fill the first list (my_list)
 
