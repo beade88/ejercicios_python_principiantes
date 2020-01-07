@@ -8,7 +8,7 @@ elements of the first list minus all the duplicates.
 
 # This function returns  a list that contains the elements of the initial list but without duplicates elements.
 def list_without_duplicates(list_to_analyze):
-    return set(my_list)
+    return set(list_to_analyze)
 
 
 list_length = int(input('Type a length of your list: '))
