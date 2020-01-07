@@ -12,7 +12,7 @@ and when the game ends, print this out.
 """
 
 # Very good!!!!
-# DEAL: think about this solution using functions please
+# DEAL: think about this solution using functions please.. OK
 
 
 import random
