@@ -11,7 +11,7 @@ Remember the rules:
 
 # Very Very Very good.
 # No PEP8 error, no spanish words, no english errors,
-# good variables naming...no comments here :D
+# good variables naming...no comments here :D >D
 
 # But, as nothing is perfect, come on, lets thing another solution :D
 # I dont know, I let it open to your imagination :D
