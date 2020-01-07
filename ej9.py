@@ -1,3 +1,6 @@
+# Very good!!!!
+# DEAL: think about this solution using functions please
+
 import random
 key_number = random.randint(1, 10)
 on_game = 'y'
