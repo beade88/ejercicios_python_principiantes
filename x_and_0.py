@@ -76,9 +76,38 @@ def player_action():
                 if list_board[v] == '-':
                     list_board[v] = 'X'
                     correct_position = 0
+                    # Check
+                    if horizontal(list_board) is True:
+                        print('X wins!!!')
+                        break
+                    #            active = 0
+                    elif vertical(list_board) is True:
+                        print('X wins!!!')
+                        break
+                    #           active = 0
+                    elif diagonal(list_board) is True:
+                        print('X wins!!!')
+                        break
+                #          active = 0
+                # Check
         else:
             list_board[v] = 'X'
-        print(board_game(list_board))
+            print(board_game(list_board))
+            # Check
+            if horizontal(list_board) is True:
+                print('X wins!!!')
+                break
+            #            active = 0
+            elif vertical(list_board) is True:
+                print('X wins!!!')
+                break
+            #           active = 0
+            elif diagonal(list_board) is True:
+                print('X wins!!!')
+                break
+        #          active = 0
+        # Check
+
         print('0 turn')
         v = int(input('Type the position for your O: '))
         if list_board[v] != '-':
@@ -89,24 +118,38 @@ def player_action():
                 if list_board[v] == '-':
                     list_board[v] = 'O'
                     correct_position2 = 0
+                    # Check
+                    if horizontal(list_board) is True:
+                        print('O wins!!!')
+                        break
+                    #            active = 0
+                    elif vertical(list_board) is True:
+                        print('O wins!!!')
+                        break
+                    #           active = 0
+                    elif diagonal(list_board) is True:
+                        print('O wins!!!')
+                        break
+                #          active = 0
+                # Check
         else:
             list_board[v] = 'O'
-        print(board_game(list_board))
+            print(board_game(list_board))
+            # Check
+            if horizontal(list_board) is True:
+                print('O wins!!!')
+                break
+            #            active = 0
+            elif vertical(list_board) is True:
+                print('O wins!!!')
+                break
+            #           active = 0
+            elif diagonal(list_board) is True:
+                print('O wins!!!')
+                break
+        #          active = 0
+        # Check
 
-        # Check
-        if horizontal(list_board) is True:
-            print('X wins!!!')
-            break
-#            active = 0
-        elif vertical(list_board) is True:
-            print('X wins!!!')
-            break
-#           active = 0
-        elif diagonal(list_board) is True:
-            print('X wins!!!')
-            break
-#          active = 0
-        # Check
 
 
 player_action()
