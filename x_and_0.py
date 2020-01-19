@@ -61,10 +61,18 @@ def diagonal(listd):
         return True
 
 
+# To check if the game is over whit draw
+def draw(list_draw):
+    a = 0
+    for i in range(len(list_draw)):
+        if list_draw[i] != '-':
+            a = a + 1
+    if a == 8:
+        return True
+
+
 # Game action
 def player_action():
-    active = 1
-#    while active == 1:
     while True:
         print('X turn')
         v = int(input('Type the position for your X: '))
@@ -78,34 +86,34 @@ def player_action():
                     correct_position = 0
                     # Check
                     if horizontal(list_board) is True:
-                        print('X wins!!!')
+                        print("X's win!!!")
                         break
-                    #            active = 0
                     elif vertical(list_board) is True:
-                        print('X wins!!!')
+                        print("X's win!!!")
                         break
-                    #           active = 0
                     elif diagonal(list_board) is True:
-                        print('X wins!!!')
+                        print("X's win!!!")
                         break
-                #          active = 0
+                    elif draw(list_board) is True:
+                        print("It's a draw!!!")
+                        break
                 # Check
         else:
             list_board[v] = 'X'
             print(board_game(list_board))
             # Check
             if horizontal(list_board) is True:
-                print('X wins!!!')
+                print("X's win!!!")
                 break
-            #            active = 0
             elif vertical(list_board) is True:
-                print('X wins!!!')
+                print("X's win!!!")
                 break
-            #           active = 0
             elif diagonal(list_board) is True:
-                print('X wins!!!')
+                print("X's win!!!")
                 break
-        #          active = 0
+            elif draw(list_board) is True:
+                print("It's a draw!!!")
+                break
         # Check
 
         print('0 turn')
@@ -120,36 +128,35 @@ def player_action():
                     correct_position2 = 0
                     # Check
                     if horizontal(list_board) is True:
-                        print('O wins!!!')
+                        print("O's win!!!")
                         break
-                    #            active = 0
                     elif vertical(list_board) is True:
-                        print('O wins!!!')
+                        print("O's win!!!")
                         break
-                    #           active = 0
                     elif diagonal(list_board) is True:
-                        print('O wins!!!')
+                        print("O's win!!!")
                         break
-                #          active = 0
+                    elif draw(list_board) is True:
+                        print("It's a draw!!!")
+                        break
                 # Check
         else:
             list_board[v] = 'O'
             print(board_game(list_board))
             # Check
             if horizontal(list_board) is True:
-                print('O wins!!!')
+                print("O's win!!!")
                 break
-            #            active = 0
             elif vertical(list_board) is True:
-                print('O wins!!!')
+                print("O's win!!!")
                 break
-            #           active = 0
             elif diagonal(list_board) is True:
-                print('O wins!!!')
+                print("O's win!!!")
                 break
-        #          active = 0
+            elif draw(list_board) is True:
+                print("It's a draw!!!")
+                break
         # Check
-
 
 
 player_action()
